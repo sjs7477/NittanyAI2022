@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="signin.component.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C^2</title>
+</head>
+<body class="container">
+    <header class="main-header">
+        <a href="/" class="brand-logo">
+            <img src="/assets/Logo.png" alt="image">
+        </a>
+        </header>
+
+        <div class="container" style="margin-top: 20px; margin-left: 10%;">
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Email id</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Enter Email Id..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Password</label>
+                </div>
+                <div class="col-75">
+                  <input type="password" id="pw" name="pw">
+                </div>
+              </div>
+
+              <div style="width: 500px;">
+                <input type="submit" value="Login" [routerLink]="['/main']" >
+              </div>
+            </form>
+          </div>

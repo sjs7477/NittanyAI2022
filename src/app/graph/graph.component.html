@@ -1,0 +1,70 @@
+<!--<!DOCTYPE html>
+<!-- Code By Webdevtrick ( https://webdevtrick.com )
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Animated Bar Graphs | Webdevtrick.com</title>
+  <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="graph.component.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script  src="assets/function.js"></script>
+  <script>
+      /** Code By Webdevtrick ( https://webdevtrick.com ) **/
+setTimeout(function start (){
+  
+  $('.bar').each(function(i){  
+    var $bar = $(this);
+    $(this).append('<span class="count"></span>')
+    setTimeout(function(){
+      $bar.css('width', $bar.attr('data-percent'));      
+    }, i*100);
+  });
+ 
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).parent('.bar').attr('data-percent')
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now) +'%');
+        }
+    });
+});
+ 
+}, 500)
+  </script>
+</head>
+  
+<body>
+
+   <div class="wrap">
+<h1>JavaScript Animated Bar Graphs</h1>
+<div class="holder"><div class="bar " data-percent="95%"><span class="label">HTML</span></div>
+<div class="bar" data-percent="80%"><span class="label second">CSS</span></div>
+<div class="bar" data-percent="65%"><span class="label">JavaScript</span></div>
+<div class="bar" data-percent="75%"><span class="label second">jQuery</span></div>
+<div class="bar" data-percent="90%"><span class="label">Bootstrap</span></div>
+<div class="bar" data-percent="40%"><span class="label second">React</span></div>
+<div class="bar" data-percent="45%"><span class="label ">Vue</span></div>
+<div class="bar" data-percent="50%"><span class="label second">Angular</span></div>
+<div class="bar" data-percent="95%"><span class="label">CMS</span></div>
+<div class="bar" data-percent="70%"><span class="label second">Node JS</span></div>
+  </div>
+   </div>
+
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="250px" height="300px" autoplay muted>
+  <source src="assets/chart.webm" type="video/webm">
+</video>
+
+</body>
+</html>

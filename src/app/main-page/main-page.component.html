@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="main-page.component.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C^2</title>
+</head>
+<body class="container">
+    <header class="main-header">
+        <a href="/" class="brand-logo">
+            <img src="/assets/Logo.png" alt="image">
+        </a>
+    </header>
+    <div style="margin-top: 10%; margin-left: 22%;">
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">Upload Resume</label>
+        </div>
+        <div class="col-75">
+            <input type="file" class="file-upload" onchange="console.log(event.target.files)">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Select desired Field</label>
+        </div>
+        <div class="col-75">
+            <select>
+                <option>Select</option>
+                <option>Data Science</option>
+                <option>Data Analyst</option>
+            </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Select current Field</label>
+        </div>
+        <div class="col-75">
+            <select>
+                <option>Select</option>
+                <option>Data Science</option>
+                <option>Data Analyst</option>
+            </select>
+        </div>
+      </div>
+
+      <div style="width: 270px;">
+        <input type="submit" value="Submit" [routerLink]="['/result']">
+      </div>
+    </div>
+</body>
+</html>

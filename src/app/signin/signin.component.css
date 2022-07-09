@@ -1,0 +1,206 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+    
+    html {    
+      background: url("/assets/bgimg.png") no-repeat center fixed;     
+      background-size: cover;
+  }
+  body {
+      margin: 0;
+      padding: 0;
+
+      background-color: transparent;
+      font-family: sans-serif;
+      color: black;
+      min-height: 100vh;
+
+  }
+    
+    .full-height-grow{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .brand-logo {
+        display: flex;
+        align-items: center ;
+        font-size: 1.25em;
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .main-nav ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .main-nav a{
+        color: inherit;
+        text-decoration: none;
+        padding: 1rem;
+        float: right;
+    }
+    
+    .main-nav a:hover{
+        color: #adadad;
+    }
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    img {
+      padding: 1rem;
+      max-width: 21%;
+      margin-left: -8%;
+      max-height: 10%;
+      margin-top: -32px;
+  }
+    
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    
+    .title {
+        font-weight: 500;
+        font-size: 3em;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+    
+    .subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    }
+    
+    .btn {
+    color: white;
+    background-color: #1762A7;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+    }
+
+
+    /* Unique CSS for component */
+
+    input[type=text], select, textarea{
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+
+      input[type=password], select, textarea{
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+      
+      /* Style the label to display next to the inputs */
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        color: black;
+      }
+      
+      /* Style the submit button */
+      input[type=submit] {
+        margin-top: 30px;
+        background-color: #1762A7;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      
+      /* Style the container */
+      .container {
+        border-radius: 5px;
+        padding: 20px;
+      }
+      
+      /* Floating column for labels: 25% width */
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      /* Floating column for inputs: 75% width */
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+
+      /* For loader check */
+      .spinner {
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+      
+        position: absolute;
+        top: 48%;
+        left: 48%;
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+      }
+      
+      @-webkit-keyframes sk-rotateplane {
+        0% { -webkit-transform: perspective(120px) }
+        50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+        100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+      }
+      
+      @keyframes sk-rotateplane {
+        0% { 
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+        } 50% { 
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+        } 100% { 
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+      }
+      .spinner-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ff6347;
+        z-index: 999999;
+        }
